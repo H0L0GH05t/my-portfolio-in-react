@@ -1,0 +1,90 @@
+.project-detail {
+  padding: 20px;
+  max-width: 900px; /* Max width for content */
+  margin: 20px auto; /* Center the content */
+  background-color: #101210; /* Dark background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: left; /* Align text left */
+}
+
+.project-detail-title {
+  font-family: 'Stalinist One', sans-serif;
+  color: #FAD2FA; /* Light pink */
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  text-align: center; /* Center the title */
+}
+
+.project-detail-image {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove extra space below image */
+  margin: 0 auto 30px auto; /* Center image and add space below */
+  border-radius: 4px;
+}
+
+.project-detail-long-description {
+  font-family: 'Goldman', sans-serif;
+  color: #CBCDCB;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  white-space: pre-wrap; /* Preserves whitespace and line breaks for descriptions */
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap; /* Allow links to wrap */
+  justify-content: center; /* Center links */
+  gap: 15px; /* Space between buttons */
+  margin-top: 30px;
+}
+
+.project-link-button {
+  background-color: #FAD2FA; /* Light pink button background */
+  color: #101210; /* Dark text for button */
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Goldman', sans-serif;
+  font-size: 1.05rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none; /* Remove default button border */
+}
+
+.project-link-button:hover {
+  background-color: #F28DF2; /* Slightly darker pink on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-detail {
+    padding: 15px;
+    margin: 15px auto;
+  }
+  .project-detail-title {
+    font-size: 2.2rem;
+  }
+  .project-detail-long-description {
+    font-size: 1rem;
+  }
+  .project-link-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-detail-title {
+    font-size: 1.8rem;
+  }
+  .project-detail-long-description {
+    font-size: 0.9rem;
+  }
+  .project-links {
+    flex-direction: column; /* Stack buttons on small screens */
+    align-items: center;
+  }
+}

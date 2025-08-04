@@ -1,0 +1,266 @@
+.home-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center; /* Center content horizontally */
+}
+
+/* Hero Section (Photo and Intro Text) */
+.hero-section {
+  background-color: #101210;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 50px;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.hero-content {
+  max-width: 700px; /* Limit width of text for readability */
+}
+
+.profile-photo {
+  width: 200px; /* Adjust size as needed */
+  height: 200px;
+  border-radius: 50%; /* Make it a circular photo */
+  object-fit: cover; /* Ensure photo covers the area */
+  border: 5px solid #FAD2FA; /* A border with your pink accent color */
+  margin-bottom: 25px;
+  box-shadow: 0 0 15px rgba(250, 210, 250, 0.5); /* Glowing effect */
+}
+
+.intro-text {
+  font-family: 'Goldman', sans-serif;
+  color: #CBCDCB;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 0; /* No bottom margin if it's the last element in hero-content */
+}
+
+.highlight-text {
+  font-family: 'Stalinist One', sans-serif; /* Use Stalinist One for your name */
+  color: #FDE9FD; /* Light pink for highlight */
+  font-size: 1.35em; /* Slightly larger than surrounding text */
+}
+
+.about-cta-container {
+  margin: 50px auto; /* Space above and below the button */
+  text-align: center;
+  max-width: 600px; /* Limit button width */
+}
+
+.about-cta-button {
+  background-color: #8DF2F2; /* Cyan from your palette */
+  color: #101210; /* Dark text for contrast */
+  padding: 18px 35px; /* Generous padding for a larger button */
+  border-radius: 8px; /* Slightly more rounded corners */
+  text-decoration: none;
+  font-family: 'Goldman', sans-serif;
+  font-size: 1.3rem; /* Larger font size */
+  font-weight: bold; /* Make the text bold */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  display: inline-block; /* Allows padding and transforms */
+  line-height: 1.4; /* Improve line spacing for multiple lines of text */
+  border: 2px solid transparent; /* Start with transparent border */
+  box-shadow: 0 5px 15px rgba(141, 242, 242, 0.3); /* Subtle glow effect */
+}
+
+.about-cta-button:hover {
+  background-color: #5CF0F0; /* Darker cyan on hover */
+  transform: translateY(-5px); /* Lift higher on hover */
+  box-shadow: 0 8px 20px rgba(141, 242, 242, 0.4); /* Stronger glow on hover */
+  border-color: #FAD2FA; /* Add a pink border on hover */
+}
+
+/* Featured Projects Section */
+.featured-projects-section {
+  background-color: #101210;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.featured-title {
+  font-family: 'Stalinist One', sans-serif;
+  color: #E9FDE9; /* Light green from palette */
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.featured-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Similar to main projects grid */
+  gap: 30px;
+  margin-bottom: 40px;
+  justify-content: center; /* Center items if fewer than 2 */
+}
+
+.featured-project-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Make the link take up the whole card space */
+  height: 100%; /* Ensure link fills grid item */
+}
+
+.featured-project-card {
+  background-color: #202426; /* Slightly lighter background than main sections */
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Important for consistent card height in grid */
+}
+
+.featured-project-card:hover {
+  transform: translateY(-8px); /* More pronounced lift effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.featured-project-image {
+  width: 100%;
+  height: 220px; /* Slightly larger image height for featured projects */
+  object-fit: cover;
+  border-bottom: 1px solid #444;
+}
+
+.featured-project-content {
+  padding: 18px;
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.featured-project-title {
+  font-family: 'Stalinist One', sans-serif;
+  color: #FAD2FA;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.8rem; /* Larger title for featured projects */
+}
+
+.featured-project-summary {
+  font-family: 'Goldman', sans-serif;
+  color: #CBCDCB;
+  font-size: 1.05rem; /* Slightly larger description */
+  line-height: 1.6;
+}
+
+.view-all-projects-button {
+  background-color: #8DF2F2; /* Cyan button */
+  color: #101210;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Goldman', sans-serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 30px; /* Space above button */
+  display: inline-block; /* Allows vertical margins and retains link properties */
+}
+
+.view-all-projects-button:hover {
+  background-color: #5CF0F0; /* Slightly darker cyan on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 30px 15px;
+    margin-bottom: 40px;
+  }
+  .profile-photo {
+    width: 180px;
+    height: 180px;
+  }
+  .intro-text {
+    font-size: 1.1rem;
+  }
+  .highlight-text {
+    font-size: 1.25em;
+  }
+  .about-cta-container {
+    margin: 40px auto;
+  }
+  .about-cta-button {
+    padding: 15px 25px;
+    font-size: 1.15rem;
+    max-width: 90%; /* Adjust max-width for smaller screens */
+  }
+  .featured-title {
+    font-size: 2.2rem;
+  }
+  .featured-projects-grid {
+    grid-template-columns: 1fr; /* Single column on medium screens */
+    gap: 25px;
+  }
+  .featured-project-image {
+    height: 200px;
+  }
+  .featured-project-title {
+    font-size: 1.6rem;
+  }
+  .featured-project-summary {
+    font-size: 1rem;
+  }
+  .view-all-projects-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 25px 10px;
+    margin-bottom: 30px;
+  }
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-width: 3px;
+  }
+  .intro-text {
+    font-size: 1rem;
+  }
+  .highlight-text {
+    font-size: 1.15em;
+  }
+  .about-cta-container {
+    margin: 30px auto;
+  }
+  .about-cta-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  .featured-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .featured-project-image {
+    height: 180px;
+  }
+  .featured-project-title {
+    font-size: 1.4rem;
+  }
+  .featured-project-summary {
+    font-size: 0.9rem;
+  }
+  .view-all-projects-button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}

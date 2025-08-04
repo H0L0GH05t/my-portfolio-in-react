@@ -1,0 +1,48 @@
+.projects-container {
+  padding: 20px;
+  max-width: 1200px; /* Limit content width */
+  margin: 0 auto; /* Center the container */
+}
+
+.projects-container h2 {
+  font-family: 'Stalinist One', sans-serif; /* Ensure consistent heading font */
+  color: #FDE9FD; /* Another light pink from your palette */
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+.projects-description {
+  font-family: 'Goldman', sans-serif;
+  color: #CBCDCB; /* Lighter grey text from your palette */
+  font-size: 1.15rem;
+  line-height: 1.6;
+  max-width: 800px; /* Limit width for readability */
+  margin: 0 auto 40px auto; /* Center the text and add margin below */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 30px; /* Space between grid items */
+  padding-bottom: 40px; /* Add some space at the bottom */
+}
+
+/* Basic responsive adjustments */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .projects-description {
+    font-size: 1rem;
+    max-width: 90%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+    gap: 15px;
+  }
+}
