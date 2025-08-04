@@ -12,13 +12,13 @@ function DesignProjectDetail({ project }) {
 
       <div className="project-links">
         {project.behanceLink && (
-          <a href={project.behanceLink} target="_blank" rel="noopener noreferrer" className="project-link-button">
-            View on Behance
+          <a href={project.lofiFigmaLink} target="_blank" rel="noopener noreferrer" className="project-link-button">
+            View Lo-Fidelity Prototype on Figma
           </a>
         )}
         {project.dribbbleLink && (
-          <a href={project.dribbbleLink} target="_blank" rel="noopener noreferrer" className="project-link-button">
-            View on Dribbble
+          <a href={project.hifiFigmaLink} target="_blank" rel="noopener noreferrer" className="project-link-button">
+            View High Fidelity Prototype on Figma
           </a>
         )}
         {project.portfolioPdf && (

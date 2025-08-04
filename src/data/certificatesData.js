@@ -1,7 +1,7 @@
 const certificatesData = [
   {
-    id: 'webdev-group',
-    category: 'Web Development',
+    id: 'dev-group',
+    category: 'Software Development',
     certificates: [
       {
         name: 'React Developer Certification',
@@ -21,11 +21,34 @@ const certificatesData = [
         date: 'Sept 2022',
         link: 'https://www.freecodecamp.org/certification/your-username/javascript-algorithms-and-data-structures',
       },
+      {
+        name: 'Front-End Web Development Bootcamp',
+        issuer: 'General Assembly',
+        isCourse: true,
+        date: 'Dec 2022',
+        subCertificates: [
+          {
+            name: 'Module 1: HTML & CSS',
+            date: 'Oct 2022',
+            link: 'https://example.com/ga-module1-cert',
+          },
+          {
+            name: 'Module 2: JavaScript Fundamentals',
+            date: 'Nov 2022',
+            link: 'https://example.com/ga-module2-cert',
+          },
+          {
+            name: 'Final Completion Certificate',
+            date: 'Dec 2022',
+            link: 'https://example.com/ga-final-cert',
+          },
+        ],
+      },
     ],
   },
   {
-    id: 'cloud-group',
-    category: 'Cloud & DevOps',
+    id: 'testing-automation-group',
+    category: 'Software Testing and Automation',
     certificates: [
       {
         name: 'AWS Certified Cloud Practitioner',
@@ -44,6 +67,23 @@ const certificatesData = [
   {
     id: 'design-group',
     category: 'UI/UX Design',
+    certificates: [
+      {
+        name: 'Google UX Design Professional Certificate',
+        issuer: 'Google via Coursera',
+        date: 'April 2023',
+        link: 'https://example.com/google-ux-cert',
+      },
+      {
+        name: 'Figma Basics',
+        issuer: 'Design Academy',
+        date: 'Feb 2023',
+      },
+    ],
+  },
+  {
+    id: 'soft-skill-group',
+    category: 'Leadership and Project Management',
     certificates: [
       {
         name: 'Google UX Design Professional Certificate',

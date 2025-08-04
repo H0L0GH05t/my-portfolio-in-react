@@ -67,14 +67,35 @@ function About() {
         <h3 className="section-heading">Work Experience</h3>
         <p className="section-content">
           Here's a brief overview of my professional journey:
-          <ul>
-            <li><b>Contractor</b> at Alignerr (Feb 2025 - Present)</li>
-            <li><b>Contributor</b> at Outlier AI (Oct 2024 - Present)</li>
-            <li><b>Professional Development</b> [see certificates] (July 2023 - Present)</li>
-            <li><b>Software Engineer II</b> at Iteris (Oct 2022 - June 2023)</li>
-            <li><b>Software Engineer II</b> at Gates Corporation (Nov 2020 - Sept 2022)</li>
-            <li><b>Software Engineer</b> at DataRobot (July 2019 - Nov 2019)</li>
-            <li><b>Software Engineer</b> at Agfa Graphics (June 2014 - May 2019)</li>
+          <ul className="work-experience-list">
+            <li>
+              <span className="job-details"><b>Contractor</b> at Alignerr</span>
+              <span className="job-date">Feb 2025 - Present</span>
+            </li>
+            <li>
+              <span className="job-details"><b>Contributor</b> at Outlier AI</span>
+              <span className="job-date">Oct 2024 - Present</span>
+            </li>
+            <li>
+              <span className="job-details"><b>Professional Development</b> [see certificates]</span>
+              <span className="job-date">July 2023 - Present</span>
+            </li>
+            <li>
+              <span className="job-details"><b>Software Engineer II</b> at Iteris</span>
+              <span className="job-date">Oct 2022 - June 2023</span>
+            </li>
+            <li>
+              <span className="job-details"><b>Software Engineer II</b> at Gates Corporation</span>
+              <span className="job-date">Nov 2020 - Sept 2022</span>
+            </li>
+            <li>
+              <span className="job-details"><b>Software Engineer</b> at DataRobot</span>
+              <span className="job-date">July 2019 - Nov 2019</span>
+            </li>
+            <li>
+              <span className="job-details"><b>Software Engineer</b> at Agfa Graphics</span>
+              <span className="job-date">June 2014 - May 2019</span>
+            </li>
           </ul>
         </p>
         <button onClick={handleDownloadResume} className="download-resume-button">
@@ -89,19 +110,39 @@ function About() {
             <button
               className="certificate-group-toggle"
               onClick={() => toggleCategory(group.id)}
-              aria-expanded={!!openCertCategories[group.id]} // Accessibility attribute
+              aria-expanded={!!openCertCategories[group.id]}
             >
               {group.category} {openCertCategories[group.id] ? '▲' : '▼'}
             </button>
             <div className={`certificate-list ${openCertCategories[group.id] ? 'open' : 'closed'}`}>
               <ul>
                 {group.certificates.map(cert => (
-                  <li key={cert.name + cert.issuer}>
-                    <strong>{cert.name}</strong> from {cert.issuer} ({cert.date})
-                    {cert.link && (
-                      <a href={cert.link} target="_blank" rel="noopener noreferrer" className="certificate-link">
-                        {' '}View Credential
-                      </a>
+                  <li key={cert.name + (cert.issuer || '')}>
+                    {cert.isCourse ? (
+                      <div>
+                        <strong className="course-title">{cert.name}</strong> from {cert.issuer} ({cert.date})
+                        <ul className="sub-certificates-list">
+                          {cert.subCertificates.map(subCert => (
+                            <li key={subCert.name}>
+                              <span>{subCert.name} ({subCert.date})</span>
+                              {subCert.link && (
+                                <a href={subCert.link} target="_blank" rel="noopener noreferrer" className="certificate-link">
+                                  {' '}View Credential
+                                </a>
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : (
+                      <>
+                        <strong>{cert.name}</strong> from {cert.issuer} ({cert.date})
+                        {cert.link && (
+                          <a href={cert.link} target="_blank" rel="noopener noreferrer" className="certificate-link">
+                            {' '}View Credential
+                          </a>
+                        )}
+                      </>
                     )}
                   </li>
                 ))}
@@ -110,7 +151,6 @@ function About() {
           </div>
         ))}
       </section>
-      {/* Add more sections like Skills, Education, etc. */}
     </div>
   );
 }
