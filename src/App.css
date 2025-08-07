@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=goldman&display=swap');
-
 body {
   margin: 0;
   background-color: #545A54;
@@ -10,10 +7,10 @@ body {
   color: #FFFFFF;
 }
 
-/* Apply Stalinist One to headings */
+/* Apply Stalinist One font to headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Stalinist One', sans-serif;
-  color: #FFFFFF; /* Ensure headings are also white */
+  color: #FFFFFF;
 }
 
 .App {

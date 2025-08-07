@@ -1,0 +1,50 @@
+.project-report-template {
+  color: #CBCDCB;
+  font-family: 'Goldman', sans-serif;
+  margin-top: 30px;
+}
+
+.report-overview,
+.report-text-block,
+.report-going-forward {
+  margin-bottom: 30px;
+}
+
+.report-overview-heading,
+.report-section-heading,
+.report-going-forward-heading {
+  font-family: 'Stalinist One', sans-serif;
+  color: #FAD2FA;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #282d2f;
+  padding-bottom: 5px;
+}
+
+.report-text-content {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.report-image-block {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.report-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .report-overview-heading,
+  .report-section-heading,
+  .report-going-forward-heading {
+    font-size: 1.5rem;
+  }
+  .report-text-content {
+    font-size: 1rem;
+  }
+}

@@ -66,7 +66,6 @@ function About() {
       <section className="about-section">
         <h3 className="section-heading">Work Experience</h3>
         <p className="section-content">
-          Here's a brief overview of my professional journey:
           <ul className="work-experience-list">
             <li>
               <span className="job-details"><b>Contractor</b> at Alignerr</span>
@@ -121,6 +120,9 @@ function About() {
                     {cert.isCourse ? (
                       <div>
                         <strong className="course-title">{cert.name}</strong> from {cert.issuer} ({cert.date})
+                        <a href={cert.link} target="_blank" rel="noopener noreferrer" className="certificate-link">
+                                  {' '}View Credential
+                        </a>
                         <ul className="sub-certificates-list">
                           {cert.subCertificates.map(subCert => (
                             <li key={subCert.name}>

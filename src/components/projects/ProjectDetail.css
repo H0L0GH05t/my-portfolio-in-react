@@ -1,26 +1,26 @@
 .project-detail {
   padding: 20px;
-  max-width: 900px; /* Max width for content */
-  margin: 20px auto; /* Center the content */
-  background-color: #101210; /* Dark background */
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #101210;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  text-align: left; /* Align text left */
+  text-align: left;
 }
 
 .project-detail-title {
   font-family: 'Stalinist One', sans-serif;
-  color: #FAD2FA; /* Light pink */
+  color: #FAD2FA;
   font-size: 2.8rem;
   margin-bottom: 20px;
-  text-align: center; /* Center the title */
+  text-align: center;
 }
 
 .project-detail-image {
   max-width: 100%;
   height: auto;
-  display: block; /* Remove extra space below image */
-  margin: 0 auto 30px auto; /* Center image and add space below */
+  display: block;
+  margin: 0 auto 30px auto;
   border-radius: 4px;
 }
 
@@ -42,8 +42,8 @@
 }
 
 .project-link-button {
-  background-color: #FAD2FA; /* Light pink button background */
-  color: #101210; /* Dark text for button */
+  background-color: #FAD2FA;
+  color: #101210;
   padding: 12px 25px;
   border-radius: 5px;
   text-decoration: none;
@@ -54,8 +54,8 @@
 }
 
 .project-link-button:hover {
-  background-color: #F28DF2; /* Slightly darker pink on hover */
-  transform: translateY(-2px); /* Slight lift on hover */
+  background-color: #F28DF2;
+  transform: translateY(-2px);
 }
 
 /* Responsive adjustments */

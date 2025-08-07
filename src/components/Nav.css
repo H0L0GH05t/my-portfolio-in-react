@@ -101,18 +101,18 @@
 
 @media (max-width: 480px) {
   .navbar {
-    flex-direction: column; /* Stack vertically on very small screens */
+    flex-direction: column;
     padding: 0.8rem;
   }
   .navbar-brand {
     margin-bottom: 15px;
   }
   .nav-list {
-    flex-direction: column; /* Stack nav links vertically */
+    flex-direction: column;
     align-items: center;
   }
   .nav-item {
-    margin: 5px 0; /* Vertical spacing for stacked links */
+    margin: 5px 0;
   }
   .brand-name {
     font-size: 1.3rem;

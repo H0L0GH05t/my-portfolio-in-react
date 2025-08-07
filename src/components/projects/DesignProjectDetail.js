@@ -2,23 +2,28 @@ import React from 'react';
 import ProjectNavigation from './ProjectNavigation';
 import projectsData from '../../data/projectsData';
 import './ProjectDetail.css';
+import ReportTemplate from './ReportTemplate';
 
 function DesignProjectDetail({ project }) {
   return (
     <div className="project-detail">
       <h2 className="project-detail-title">{project.title}</h2>
-      <img src={project.image} alt={project.title} className="project-detail-image" />
-      <p className="project-detail-long-description">{project.longDescription}</p>
+      <img src={ process.env.PUBLIC_URL +  project.image} alt={project.title} className="project-detail-image" />
+      {project.report ? (
+        <ReportTemplate report={project.report} />
+      ) : (
+        <p className="project-detail-long-description">{project.longDescription}</p>
+      )}
 
       <div className="project-links">
         {project.behanceLink && (
-          <a href={project.lofiFigmaLink} target="_blank" rel="noopener noreferrer" className="project-link-button">
-            View Lo-Fidelity Prototype on Figma
+          <a href={project.behanceLink} target="_blank" rel="noopener noreferrer" className="project-link-button">
+            View on Behance
           </a>
         )}
         {project.dribbbleLink && (
-          <a href={project.hifiFigmaLink} target="_blank" rel="noopener noreferrer" className="project-link-button">
-            View High Fidelity Prototype on Figma
+          <a href={project.dribbbleLink} target="_blank" rel="noopener noreferrer" className="project-link-button">
+            View on Dribbble
           </a>
         )}
         {project.portfolioPdf && (

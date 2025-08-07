@@ -1,38 +1,38 @@
 .about-container {
   max-width: 900px;
   margin: 20px auto;
-  text-align: left; /* Align content to the left */
+  text-align: left;
 }
 
 .about-title {
   font-family: 'Stalinist One', sans-serif;
-  color: #FDE9FD; /* Light pink from palette */
+  color: #FDE9FD;
   font-size: 3rem;
   margin-bottom: 40px;
-  text-align: center; /* Center the main title */
+  text-align: center;
 }
 
 .about-section {
-  background-color: #101210; /* Dark background for sections */
+  background-color: #101210;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  margin-bottom: 30px; /* Space between sections */
+  margin-bottom: 30px;
 }
 
 .section-heading {
   font-family: 'Stalinist One', sans-serif;
-  color: #FAD2FA; /* Another light pink */
+  color: #FAD2FA;
   font-size: 2rem;
   margin-top: 0;
   margin-bottom: 20px;
-  border-bottom: 2px solid #282d2f; /* Underline effect */
+  border-bottom: 2px solid #282d2f;
   padding-bottom: 10px;
 }
 
 .section-content {
   font-family: 'Goldman', sans-serif;
-  color: #CBCDCB; /* Lighter grey text */
+  color: #CBCDCB;
   font-size: 1.1rem;
   line-height: 1.7;
 }
@@ -47,8 +47,8 @@
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Use center for vertical alignment */
-  width: 100%; /* Explicitly set to 100% to make sure it takes up available space */
+  align-items: center;
+  width: 100%;
 }
 
 .work-experience-list {
@@ -59,7 +59,7 @@
 
 .work-experience-list li {
   font-family: 'Goldman', sans-serif;
-  color: #D2FAFA; /* Cyan text for list items */
+  color: #D2FAFA;
   margin-bottom: 12px;
   line-height: 1.5;
   font-size: 1rem;
@@ -72,9 +72,9 @@
 
 .job-date {
   font-family: 'Goldman', sans-serif;
-  color: #CBCDCB; /* Lighter grey for dates */
-  font-size: 0.95rem; /* Slightly smaller font for dates */
-  white-space: nowrap; /* Prevent dates from wrapping to the next line */
+  color: #CBCDCB;
+  font-size: 0.95rem;
+  white-space: nowrap;
 }
 
 .job-title {
@@ -87,8 +87,8 @@
 
 /* Resume Download Button */
 .download-resume-button {
-  background-color: #8DF2F2; /* A cyan color from your palette */
-  color: #101210; /* Dark text for button */
+  background-color: #8DF2F2;
+  color: #101210;
   padding: 12px 25px;
   border: none;
   border-radius: 5px;
@@ -97,56 +97,59 @@
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
   margin-top: 20px;
-  display: block; /* Make it a block element to control margin-top easily */
-  margin-left: auto; /* Center button in its container */
-  margin-right: auto; /* Center button in its container */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .download-resume-button:hover {
-  background-color: #8DF2F2; /* Slightly darker cyan on hover */
+  background-color: #8DF2F2;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .certificate-group {
   margin-bottom: 15px;
-  border: 1px solid #282d2f; /* Subtle border for each group */
+  border: 1px solid #282d2f;
   border-radius: 6px;
-  overflow: hidden; /* Important for animation */
+  overflow: hidden;
 }
 
 .certificate-group-toggle {
-  background-color: #282d2f; /* Darker background for toggle button */
-  color: #E9FDE9; /* Light green text from palette */
+  background-color: #282d2f;
+  color: #E9FDE9;
   padding: 15px 20px;
-  width: 100%; /* Full width button */
+  width: 100%;
   text-align: left;
   border: none;
   cursor: pointer;
   font-family: 'Stalinist One', sans-serif;
   font-size: 1.3rem;
-  display: flex; /* To align text and arrow */
-  justify-content: space-between; /* Pushes arrow to the right */
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   transition: background-color 0.3s ease;
 }
 
 .certificate-group-toggle:hover {
-  background-color: #3d454a; /* Slightly lighter dark on hover */
+  background-color: #3d454a;
 }
 
 /* Certificate List Styles */
 .certificate-list {
-  max-height: 0; /* Initially hidden */
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.7s ease-out, padding 0.7s ease-out;
   background-color: #1a1e20;
 }
 
 .certificate-list ul {
-  list-style: none;
   margin: 0;
   padding: 0;
+}
+
+ul.sub-certificates-list{
+  padding-left: 20px;
 }
 
 .certificate-list li {
@@ -158,7 +161,7 @@
 }
 
 .certificate-list.open {
-  max-height: 500px;
+  max-height: 1000px;
   padding: 20px;
   transition: max-height 0.7s ease-in, padding 0.7s ease-in;
 }
@@ -168,7 +171,7 @@
 }
 
 .certificate-list li:last-child {
-  margin-bottom: 0; /* No margin for the last item */
+  margin-bottom: 0;
 }
 
 .course-item {
@@ -177,14 +180,14 @@
 
 .course-title {
   display: block;
-  font-size: 1.1rem; /* Slightly larger font for the course title */
-  color: #FAD2FA; /* Use a different color for course titles for emphasis */
+  font-size: 1.1rem;
+  color: #FAD2FA;
   margin-bottom: 5px;
 }
 
 .sub-certificates-list li {
-  font-size: 0.95rem; /* Smaller font for sub-certificates */
-  color: #CBCDCB; /* Use a different color for sub-certificates for distinction */
+  font-size: 0.95rem;
+  color: #CBCDCB;
   margin-bottom: 8px;
 }
 
@@ -197,7 +200,7 @@
 }
 
 .certificate-link {
-  color: #8DF2F2; /* Cyan for links */
+  color: #8DF2F2;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -223,8 +226,8 @@
     padding: 12px 15px;
   }
   .section-content li {
-    flex-direction: column; /* Stack the elements vertically */
-    align-items: flex-start; /* Left-align stacked items */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .job-details {
@@ -232,7 +235,7 @@
   }
 
   .job-date {
-    margin-top: 5px; /* Add a small space between stacked elements */
+    margin-top: 5px;
   }
 }
 

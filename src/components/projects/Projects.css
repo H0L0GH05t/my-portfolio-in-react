@@ -1,30 +1,30 @@
 .projects-container {
   padding: 20px;
-  max-width: 1200px; /* Limit content width */
-  margin: 0 auto; /* Center the container */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .projects-container h2 {
-  font-family: 'Stalinist One', sans-serif; /* Ensure consistent heading font */
-  color: #FDE9FD; /* Another light pink from your palette */
+  font-family: 'Stalinist One', sans-serif;
+  color: #FDE9FD;
   margin-bottom: 40px;
   font-size: 2.5rem;
 }
 
 .projects-description {
   font-family: 'Goldman', sans-serif;
-  color: #CBCDCB; /* Lighter grey text from your palette */
+  color: #CBCDCB;
   font-size: 1.15rem;
   line-height: 1.6;
-  max-width: 800px; /* Limit width for readability */
-  margin: 0 auto 40px auto; /* Center the text and add margin below */
+  max-width: 800px;
+  margin: 0 auto 40px auto;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-  gap: 30px; /* Space between grid items */
-  padding-bottom: 40px; /* Add some space at the bottom */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding-bottom: 40px;
 }
 
 /* Basic responsive adjustments */
