@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import projectsData from '../data/projectsData';
 import './Home.css';
+import SocialLinks from './SocialLinks';
 
 function Home() {
-  const profilePhotoPath = process.env.PUBLIC_URL + '/assets/profile-photo.jpg';
+  const profilePhotoPath = process.env.PUBLIC_URL + '/assets/logo.png'; // TODO: can change this later
   const [featuredProjects, setFeaturedProjects] = useState([]);
 
   useEffect(() => {
@@ -29,6 +30,7 @@ function Home() {
             a scrappy software specialist obsessed with automation and creating excellent
             user experiences.
           </p>
+          <SocialLinks />
         </div>
       </section>
 

@@ -1,0 +1,39 @@
+.social-links-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Base style for all social links */
+.social-link {
+  color: #FAD2FA;
+  transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Specific style for the email link */
+.email-link {
+  color: #FAD2FA;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.email-text {
+  font-family: 'Goldman', sans-serif;
+  font-size: 1.1rem;
+  margin-left: 5px;
+}
+
+.social-link:hover, .email-link:hover {
+  transform: translateY(-5px);
+  color: #E9FDE9;
+}
