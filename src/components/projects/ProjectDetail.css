@@ -13,6 +13,7 @@
   color: #FAD2FA;
   font-size: 2.8rem;
   margin-bottom: 20px;
+  margin-top: 80px; /* Adjust this value as needed to clear the fixed bar */
   text-align: center;
 }
 
@@ -57,6 +58,28 @@
   background-color: #F28DF2;
   transform: translateY(-2px);
 }
+
+.project-links-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #101210;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.project-links-top a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 8px 15px;
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

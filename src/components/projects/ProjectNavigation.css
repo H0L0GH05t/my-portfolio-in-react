@@ -25,11 +25,32 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.return-to-projects-button {
+  display: inline-block;
+  background-color: #8DF2F2;
+  color: #101210;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  border: 1px solid #8DF2F2;
+}
+
+.return-to-projects-button:hover {
+  background-color: #5CF0F0;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
   .project-navigation {
     flex-direction: column; /* Stack buttons vertically on small screens */
     gap: 15px;
     align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .return-to-projects-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
   }
 }

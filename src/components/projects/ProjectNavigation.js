@@ -23,6 +23,10 @@ function ProjectNavigation({ currentProjectId, projectsData }) {
         &larr; Previous Project
       </Link>
 
+      <Link to="/projects" className="nav-button return-to-projects-button">
+        Back to All Projects
+      </Link>
+
       <Link
         to={`/projects/${nextProject.id}`}
         className="nav-button next-button"

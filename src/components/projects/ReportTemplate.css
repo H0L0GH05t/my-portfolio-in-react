@@ -21,6 +21,65 @@
   padding-bottom: 5px;
 }
 
+.report-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.report-column {
+  flex: 1;
+}
+
+.report-body-subheading, .report-column-subheading {
+  font-family: 'Stalinist One', sans-serif;
+  color: #E9FDE9;
+  font-size: 1rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.report-column-image-container {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.report-column-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.report-inline-image-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.report-inline-image {
+  max-width: 40%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.report-inline-image-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.report-inline-image {
+  max-width: 40%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 .report-text-content {
   font-size: 1.1rem;
   line-height: 1.7;
@@ -38,6 +97,61 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.report-going-forward-subheading {
+  font-family: 'Stalinist One', sans-serif;
+  color: #FAD2FA;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+/* .report-list-header {
+  font-family: 'Stalinist One', sans-serif;
+  color: #FAD2FA;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+} */
+.report-going-forward-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0;
+  font-family: 'Goldman', sans-serif;
+  color: #CBCDCB;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.report-going-forward-list-item {
+  margin-bottom: 8px;
+}
+
+/* .project-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+} */
+
+.figma-embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.figma-embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 @media (max-width: 768px) {
   .report-overview-heading,
   .report-section-heading,
@@ -46,5 +160,16 @@
   }
   .report-text-content {
     font-size: 1rem;
+  }
+  .report-columns {
+    flex-direction: column;
+  }
+
+  .report-inline-image-container {
+    flex-direction: column;
+  }
+
+  .report-inline-image {
+    max-width: 100%;
   }
 }
