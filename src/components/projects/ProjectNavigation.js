@@ -14,28 +14,26 @@ function ProjectNavigation({ currentProjectId, projectsData }) {
   const nextProject = projectsData[nextIndex];
 
   return (
+
     <div className="project-navigation">
-      <Link
-        to={`/projects/${prevProject.id}`}
-        className="nav-button prev-button"
-        aria-label={`Go to previous project: ${prevProject.title}`}
-      >
-        &larr; Previous Project
+
+      <Link to={`/projects/${prevProject.id}`} className="nav-button prev-button">
+        <div className="nav-text">
+          <span>&larr; Previous Project</span>
+        </div>
       </Link>
 
       <Link to="/projects" className="nav-button return-to-projects-button">
-        Back to All Projects
+        Back to Projects
       </Link>
 
-      <Link
-        to={`/projects/${nextProject.id}`}
-        className="nav-button next-button"
-        aria-label={`Go to next project: ${nextProject.title}`}
-      >
-        Next Project &rarr;
+      <Link to={`/projects/${nextProject.id}`} className="nav-button next-button">
+        <div className="nav-text">
+          <span>Next Project &rarr;</span>
+        </div>
       </Link>
     </div>
   );
-}
+};
 
 export default ProjectNavigation;

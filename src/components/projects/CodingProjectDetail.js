@@ -24,23 +24,14 @@ function CodingProjectDetail({ project }) {
           report={project.report}
           githubLink={project.githubLink}
           liveDemoLink={project.liveDemoLink}
+          startdate={project.startdate}
+          enddate={project.enddate}
+          lofiFigmaLink={project.lofiFigmaLink}
+          hifiFigmaLink={project.hifiFigmaLink}
         />
       ) : (
         <p className="project-detail-long-description">{project.longDescription}</p>
       )}
-
-      <div className="project-links">
-        {project.githubLink && (
-          <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link-button">
-            View on GitHub
-          </a>
-        )}
-        {project.liveDemoLink && (
-          <a href={project.liveDemoLink} target="_blank" rel="noopener noreferrer" className="project-link-button">
-            Live Demo
-          </a>
-        )}
-      </div>
 
       <ProjectNavigation currentProjectId={project.id} projectsData={projectsData} />
     </div>

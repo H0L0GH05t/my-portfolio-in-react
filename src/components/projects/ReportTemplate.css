@@ -13,7 +13,7 @@
 .report-overview-heading,
 .report-section-heading,
 .report-going-forward-heading {
-  font-family: 'Stalinist One', sans-serif;
+  font-family: 'Goldman', sans-serif;
   color: #FAD2FA;
   font-size: 1.8rem;
   margin-bottom: 15px;
@@ -33,7 +33,7 @@
 }
 
 .report-body-subheading, .report-column-subheading {
-  font-family: 'Stalinist One', sans-serif;
+  font-family: 'Goldman', sans-serif;
   color: #E9FDE9;
   font-size: 1rem;
   margin-top: 15px;
@@ -98,14 +98,14 @@
 }
 
 .report-going-forward-subheading {
-  font-family: 'Stalinist One', sans-serif;
+  font-family: 'Goldman', sans-serif;
   color: #FAD2FA;
   font-size: 1.2rem;
   margin-top: 15px;
   margin-bottom: 10px;
 }
 /* .report-list-header {
-  font-family: 'Stalinist One', sans-serif;
+  font-family: 'Goldman', sans-serif;
   color: #FAD2FA;
   font-size: 1.2rem;
   margin-top: 15px;
@@ -150,6 +150,15 @@
   width: 100%;
   height: 100%;
   border: none;
+}
+
+.report-date-badge {
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  color: #dbdbdb;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {

@@ -1,11 +1,11 @@
 .projects-container {
   padding: 20px;
-  max-width: 1200px;
+  max-width: 60vw;
   margin: 0 auto;
 }
 
 .projects-container h2 {
-  font-family: 'Stalinist One', sans-serif;
+  font-family: 'Goldman', sans-serif;
   color: #FDE9FD;
   margin-bottom: 40px;
   font-size: 2.5rem;

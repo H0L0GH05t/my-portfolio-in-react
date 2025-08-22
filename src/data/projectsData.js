@@ -11,6 +11,8 @@ const projectsData = [
     enddate: 'Aug 2025',
     githubLink: 'https://github.com/H0L0GH05t/react-capstone',
     liveDemoLink: 'https://react-capstone-three.vercel.app/',
+    lofiFigmaLink: 'https://www.figma.com/proto/19nin28p71AtyC5OXX7h8m/Little-Lemon?node-id=310-184',
+    hifiFigmaLink: 'https://www.figma.com/proto/19nin28p71AtyC5OXX7h8m/Little-Lemon',
     report: {
       overview: {
         content: `This is the final capstone project for the Meta Front End Developer certification course available on Coursera.`,
@@ -179,10 +181,6 @@ const projectsData = [
                   value: 'With feedback in mind, it was now time to start coding. I added the components I needed, then filled them out with necessary functions and data.',
                 },
                 {
-                  type: 'text',
-                  value: 'I made sure that the app was responsive and would look good both on a wide desktop screen as well as a smaller tablet or mobile screen.',
-                },
-                {
                   type: 'image',
                   src: '/images/booking-page_smaller_screen.png',
                   alt: 'Final booking page design for Little Lemon app',
@@ -191,6 +189,10 @@ const projectsData = [
             },
             {
               body: [
+                {
+                  type: 'text',
+                  value: 'I made sure that the app was responsive and would look good both on a wide desktop screen as well as a smaller tablet or mobile screen.',
+                },
                 {
                   type: 'image',
                   src: '/images/booking-confirmation-page_smaller_screen.png',
@@ -245,10 +247,12 @@ const projectsData = [
     longDescription: 'As part of my Google UX Design class, I designed a mobile app for a (fictional) local movie theater. The idea was to act as if I am working for an actual local theater owner by iterating my way through the design process and applying feedback.',
     startdate: 'May 2024',
     enddate: 'Dec 2024',
-    // Design-specific links
     lofiFigmaLink: 'https://www.figma.com/proto/Coj3t1pGIdtWJ5fK2uP1NK/Movie-Theater-Snack-App',
     hifiFigmaLink: 'https://www.figma.com/design/Coj3t1pGIdtWJ5fK2uP1NK/Movie-Theater-Snack-App',
     report: {
+      overview: {
+        content: `As part of my Google UX Design class, I designed a mobile app for a (fictional) local movie theater. The idea was to act as if I am working for an actual local theater owner by iterating my way through the design process and applying feedback.`,
+      },
       sections: [
         {
           heading: 'Project Overview',
@@ -690,6 +694,8 @@ const projectsData = [
     title: 'Software Development Project: Self Replicating Code',
     description: 'This example project is a good showcase for my web app development skills. It uses Python/Django and accesses the Github Auth API.',
     image: '/images/self_replicator_thumb.png',
+    startdate: 'May 2019',
+    enddate: 'May 2019',
     githubLink: 'https://github.com/H0L0GH05t/selfreplicator',
     liveDemoLink: 'https://selfreplicator.onrender.com',
     report: {
@@ -713,6 +719,7 @@ const projectsData = [
       ],
     }
   },
+
   // PKMN Coin project
   {
     id: 'product-design-project',
@@ -720,11 +727,14 @@ const projectsData = [
     title: 'Product Design Project',
     description: 'While my professional experience is in software, I have a passion for art and design in physical products as well. I like to craft things in my spare time and found a need for a particular product myself. This project walks through each step I took in creating marker tokens for Pokemon TCG to help make it easier for players to remember active effects on the playing field.',
     image: '/images/product_design_thumb.png',
+    // startdate: '2025?',
+    // enddate: '',
     longDescription: 'One day while playing Pokemon Trading Card Game, I realized I had forgotten one of the effects my card does and lamented not having a way to visually represent it. There are tokens to represent two possible conditions (poison and burn), but none to represent any other effect. I decided to solve this problem myself by creating a set of new tokens to represent more of the common conditions found in Pokemon TCG in a visual way.',
-    // reportLink: 'link-to-report',// need to make report
+    lofiFigmaLink: 'https://www.figma.com/proto/IOBro7nB0Z8jGhBNgYhVzn/Ghost-Gear-Website?node-id=20-119&starting-point-node-id=20%3A119',
+    hifiFigmaLink: 'https://www.figma.com/proto/IOBro7nB0Z8jGhBNgYhVzn/Ghost-Gear-Website',
     report: {
       overview: {
-        content: `This is the final capstone project for the Meta Front End Developer certification course available on Coursera.`,
+        content: `One day while playing Pokemon Trading Card Game, I realized I had forgotten one of the effects my card does and lamented not having a way to visually represent it. There are tokens to represent two possible conditions (poison and burn), but none to represent any other effect. I decided to solve this problem myself by creating a set of new tokens to represent more of the common conditions found in Pokemon TCG in a visual way.`,
       },
       sections: [
         {
@@ -735,7 +745,7 @@ const projectsData = [
                 {
                   subheading: 'The Problem:',
                   type: 'text',
-                  value: `The (fictitious) Little Lemon restaurant has a basic app that they are not entirely happy with. They would like a booking feature to allow users to reserve a table at the restaurant.`
+                  value: `When playing the Pokemon Trading Card Game, it can become difficult to remember what effects are active at any given time. A few status effects are represented by tokens that can be placed on the cards. Some status effects require rotating the cards in certain directions, but ultimately require the player to remember what everything means.`
                 },
               ]
             },
@@ -744,47 +754,121 @@ const projectsData = [
                 {
                   subheading: 'The Goal:',
                   type: 'text',
-                  value: `Create a React app for the Little Lemon restaurant that includes a booking page for reserving a table.`
+                  value: `Create tokens to cover all the status effects and conditions in a visual way so at a glance the player can understand what is going on during a game, and market them with a visually appealing responsive website.`
+                },
+              ]
+            },
+            {
+              body: [
+                {
+                  type: 'image',
+                  src: '/images/official_tokens.jpg',
+                  alt: `Original token sets (plastic and metal variants), damage counter dice, and coin produced by The Pokemon Company`
                 },
               ]
             }
           ],
         },
         {
-          heading: 'User Research',
-          image: {
-            src: '/images/react_ux_persona.png',
-            alt: 'User Persona for Dima',
-          },
+          heading: ' Understanding the User',
           columns: [
             {
               body: [
                 {
+                  subheading: 'User Research',
                   type: 'text',
-                  value: `I created a user persona based on the given problem: The restaurant Little Lemon needs an updated app that includes the ability to book a table.`,
-                },
-                {
-                  subheading: 'Problem Statement:',
-                  type: 'text',
-                  value: 'Dima frequently dines out at restaurants with her friends and sister, but needs a reliable way to book a table ahead of time that would not take too much time out of her busy day.'
+                  value: `I conducted user interviews, which I then turned into empathy maps to better understand the users and their needs. I discovered that the lack of visuals for all conditions during a trading card game often causes frustration for users, especially for users who are younger and/or neurodivergent. It’s also more challenging for parents trying to teach their kids, as they often forget themselves what conditions are active.`
                 },
               ]
             },
           ],
         },
         {
-          heading: 'User Journey Map',
+          heading: 'Pain Points',
           columns: [
             {
               body: [
                 {
+                  subheading: 'Not all status conditions are visually represented',
+                  type: 'text',
+                  value: `Some conditions are represented via token, but others involve turning the card a certain direction, which makes it both hard to remember and hard to teach children.`
+                },
+              ]
+            },
+            {
+              body: [
+                {
+                  subheading: 'It is difficult to remember extra conditions',
+                  type: 'text',
+                  value: `Especially for children and neurodivergent users, remembering things that are written in text on the card is difficult and would be much easier with visual representation.`
+                },
+              ]
+            },
+            {
+              body: [
+                {
+                  subheading: 'No way to pause game and remember all active conditions',
+                  type: 'text',
+                  value: `Some abilities can be used multiple times and stack a certain condition. Without a way to show that has happened, resuming a paused game is nearly impossible.`
+                },
+              ]
+            },
+          ],
+        },
+        {
+          heading: 'User Personas',
+          columns: [
+            {
+              body: [
+                {
+                  subheading: 'Persona: Tyler',
                   type: 'image',
-                  src: '/images/react_ux_journey_map.png',
-                  alt: 'User Journey map for the persona Dima',
+                  src: '/images/ux_case_study2_persona.png',
+                  alt: 'Persona: Tyler',
                 }
               ]
             },
           ],
+        },
+        {
+          columns: [
+            {
+              body: [
+                {
+                  subheading: 'Problem Statement',
+                  type: 'text',
+                  value: `Tyler is a 7th grader learning to play games like the Pokemon Trading Card game with his family who needs a visual way to remember active conditions because he often forgets making him feel at a disadvantage when playing.`
+                }
+              ]
+            }
+          ]
+        },
+        {
+          columns: [
+            {
+              body: [
+                {
+                  subheading: 'Persona: Tyler',
+                  type: 'image',
+                  src: '/images/ux_case_study2_persona2.png',
+                  alt: 'Persona: Melissa',
+                }
+              ]
+            },
+          ],
+        },
+        {
+          columns: [
+            {
+              body: [
+                {
+                  subheading: 'Problem Statement',
+                  type: 'text',
+                  value: `Melissa is a long time fan of the Pokemon Trading Card Game just getting back into the hobby who needs additional status tokens because she would like a more visual way to be able to keep up with active conditions.`
+                }
+              ]
+            }
+          ]
         },
         {
           heading: 'Starting the Design',
@@ -793,51 +877,110 @@ const projectsData = [
               body: [
                 {
                   type: 'text',
-                  value: 'I was given the style guide below, and a (rather small) thumbnail of what the homepage of the app looks like. From these starting points, my task was to create the booking page that the "Reserve a table" button would lead to.',
-                },
-                {
-                  type: 'image',
-                  src: '/images/little_lemon_stylesheet.jpg',
-                  alt: 'Style Sheet provided for Little Lemon Restaurant',
+                  value: `In order to design the tokens, I spent some time iterating over choices for both the look and feel of them, as well as how I went about making them, in order to find an efficient process that led to the results I was looking for.  I 3D printed the tokens in black PLA, sanded and primed them, then painted them by hand.
+                        Before deciding the size, colors, and surface finish for the tokens, I tried several options and compared them.
+                        With some advice from friends as well as usability feedback, I chose the final size and color schemes. I decided to go with the resin coating for the finish since it was more durable and picked up fingerprints less than the gloss sealer.`,
                 },
               ]
             },
           ],
         },
         {
-          heading: 'Designing the Booking Page',
+          "image": {
+            image: [
+                {
+                  src: '/images/tokens_3d_print.png',
+                  alt: 'Freshly 3D printed token set'
+                },
+                {
+                  src: '/images/tokens_paint_in_progress.png',
+                  alt: 'In progress painted token prototypes'
+                },
+                {
+                  src: '/images/tokens_surface_test.png',
+                  alt: 'Gloss sealer test piece vs stained glass paint'
+                },
+                {
+                  src: '/images/token_resin_test.png',
+                  alt: 'Resin coated prototypes'
+                }
+            ]
+          }
+        },
+        {
+          heading: 'Designing the Shop',
           columns: [
             {
               body: [
                 {
-                  subheading: 'Digital Wireframe',
+                  subheading: 'Sitemap',
                   type: 'image',
-                  src: '/images/wireframe_react.png',
-                  alt: 'Digital wireframe for Little Lemon app',
+                  src: '/images/ux_case_study_sitemap.png',
+                  alt: 'Sitemap for shop app',
                 },
                 {
                   type: 'text',
-                  value: 'I started with a basic design, keeping the feel of the homepage design in mind. I added the homepage thumbnail to my Figma wireframe as a starting point.',
+                  value: 'My goal here was to make strategic information architecture decisions that would lend to a simple and easy to navigate app.',
                 }
               ],
             },
           ],
         },
         {
-          heading: 'Initial High-fidelity Prototype',
-          image: {
-            src: '/images/hifi_react_prototype.png',
-            alt: 'High Fidelity Prototype for Little Lemon app',
-          },
+          heading: 'Paper Wireframes',
+          columns: [
+            {
+              body: [
+                {
+                  subheading: 'Layout Choices',
+                  type: 'image',
+                  src: '/images/paper_layout_choices_ghostgear.png',
+                  alt: 'Layout Choices in Paper Wireframe form',
+                },
+                {
+                  type: 'text',
+                  value: 'I made several options for the layout and selected aspects of each that worked the best.',
+                }
+              ],
+            },
+            {
+              body: [
+                {
+                  subheading: 'Selected Design',
+                  type: 'image',
+                  src: '/images/selected_design_ghostgear.png',
+                  alt: 'Selected design from Paper Wireframes',
+                },
+                {
+                  type: 'text',
+                  value: 'After comparing my sketches, I settled on the elements I liked best from each design to come up with the first version wireframe design.',
+                }
+              ],
+            },
+            {
+              body: [
+                {
+                  subheading: 'Paper Wireframe Screen Size Variation',
+                  type: 'image',
+                  src: '/images/larger_screensize_ghostgear.png',
+                  alt: 'Larger screen size version of design',
+                },
+                {
+                  type: 'text',
+                  value: 'To accommodates users who prefer using desktop websites over mobile, I also included a desktop screen size variation design. I used the same process to decide the design as with the mobile app.',
+                }
+              ],
+            },
+          ],
         },
         {
-          heading: 'Peer Review',
+          heading: 'Digital Wireframes',
           columns: [
             {
               body: [
                 {
                   type: 'text',
-                  value: 'With the prototype ready for initial testing, we were required to submit for peer review. As a result of the review, I made the few changes listed below before proceeding to coding the app.',
+                  value: 'Moving from paper to digital wireframes made it easier to understand how the redesign could help address user pain points and improve the user experience. Seeing the page layouts next to each other helped me adjust exact placement of elements.',
                 },
               ]
             }
@@ -848,46 +991,254 @@ const projectsData = [
             {
               body: [
                 {
-                  subheading: 'Add Contact Method',
+                  subheading: 'Digital Wireframe First Draft',
                   type: 'text',
-                  value: 'It was mentioned that there is no way to contact the person making the reservation. I decided to add a field to the form that switches between either an email address or a phone number.',
+                  value: 'Categories are easy to find by tapping the hamburger menu icon. Included option to have order delivered to seat or pick-up at the concession stand available at checkout.',
                 },
               ],
             },
-            {
-              body: [
-                {
-                  subheading: 'Additional Form Field: Occasion',
-                  type: 'text',
-                  value: 'As an additional requirement for the project, I needed to add an optional field for "Occasion" so the user can indicate that they are celebrating.',
-                },
-              ]
-            },
-            {
-              body: [
-                {
-                  subheading: 'Additional Form Field: Special Notes',
-                  type: 'text',
-                  value: 'Because I needed to add a field for "Occasion" I felt it would also be a good idea to include an optional text field for adding special notes, instead of the radio buttons for requesting booster chairs or selecting outdoor seating. That way people can also have a place to  mention allergies or other special requests that might be helpful for the restaurant to know.',
-                },
-              ],
-            }
-          ],
-        },
-        {
-          heading: 'Refining the Design',
-          image: {
-            src: '/images/ghostgear_screen_variation.png',
-            alt: 'Final homepage design for Little Lemon app',
-          },
+          ]
         },
         {
           columns: [
             {
               body: [
                 {
+                  type: 'image',
+                  src: '/images/digital_wireframes_v1_ghostgear.png',
+                  alt: 'First draft of digital wireframes',
+                },
+              ]
+            }
+          ],
+        },
+        {
+          columns: [
+            {
+              subheading: 'Digital Wireframe Screen Size Variation',
+              body: [
+                {
+                  type: 'image',
+                  src: '/images/larger_screensize_digital_wireframes_ghostgear.png',
+                  alt: 'Larger screen size version of shop app in digital wireframe form',
+                },
+              ]
+            }
+          ],
+        },
+        {
+          heading: 'Low-fidelity Prototype',
+          image: {
+            src: '/images/lofi_prototype_screenshot_ghostgear.png',
+            alt: 'Lofi Prototype screenshot',
+          },
+          columns: [
+            {
+              body: [
+                {
+                  type: 'text',
+                  value: 'To create a low-fidelity prototype, I connected all of the screens involved in the primary user flow of adding an item to the cart and checking out.',
+                }
+              ]
+            },
+          ]
+        },
+        {
+          columns: [
+            {
+              body: [
+                {
+                  subheading: 'Lofi Prototype Connections',
+                  type: 'image',
+                  src: '/images/lofi_prototype_connections_ghostgear.png',
+                  alt: 'Low-fidelity prototype in Figma showing connections',
+                },
+                {
+                  type: 'text',
+                  value: 'Above you can see the connections for the user flow made in Figma. I connected each screen together logically and applied basic transition animations.',
+                },
+              ]
+            },
+          ]
+        },
+        {
+          heading: 'Usability Study',
+          columns: [
+
+            {
+              body: [
+                {
+                  listItems: [
+                    'Study Type: Unmoderated usability study',
+                    'Location: United States, Remote',
+                    'Participants: 5 participants',
+                    'Length: 10-20 minutes',
+                  ],
+                },
+              ]
+            },
+            {
+              body: [
+                {
+                  subheading: 'Findings',
+                  type: 'text',
+                  value: `The overall impression of the app was positive, although there were a few key insights that were common.`
+                },
+              ]
+            },
+          ],
+        },
+        {
+          columns: [
+            {
+              body: [
+                {
+                  subheading: 'Saved Address Location',
+                  type: 'text',
+                  value: `Users often stated they were confused how they would use a saved address`
+                },
+              ]
+            },
+            {
+              body: [
+                {
+                  subheading: 'Unclear Profile Page',
+                  type: 'text',
+                  value: `Users were confused which options are clickable or not in the profile page`
+                },
+              ]
+            },
+            {
+              body: [
+                {
+                  subheading: 'Unintuitive Login',
+                  type: 'text',
+                  value: `Many users could not figure out how they would log in and out of the app`
+                },
+              ]
+            },
+          ],
+        },
+        {
+          heading: "Refining the Design",
+          columns: [
+            {
+              body: [
+                {
+                  subheading: 'Mockups',
+                  type: 'text',
+                  value: 'I added a more obvious way to use saved payment and address info by including dropdowns under each. The default shows “New” for the item and would be changed to a saved one by selecting it on the dropdown list. In order to make the profile screen more intuitive, I added better text hierarchy and separated each item by lines.',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          columns: [
+            {
+              body: [
+                {
+                  type: 'image',
+                  src: '/images/usability_changes1_ghostgear.png',
+                  alt: 'Screenshots showing changes to checkout info'
+                },
+              ],
+            },
+            {
+              body: [
+                {
+                  type: 'image',
+                  src: '/images/usability_changes2_ghostgear.png',
+                  alt: 'Screenshots showing changes to user profile info'
+                },
+              ],
+            }
+          ],
+        },
+        {
+          heading: 'Original Screen Size Mockup',
+          columns: [
+            {
+              body: [
+                {
+                  type: 'image',
+                  src: '/images/homepage_mockup_ghostgear.png',
+                  alt: 'Homepage mockup screenshot'
+                },
+              ]
+            },
+            {
+              body: [
+                {
+                  type: 'image',
+                  src: '/images/product_detail_ghostgear.png',
+                  alt: 'Product Details mockup screenshot'
+                },
+              ]
+            },
+            {
+              body: [
+                {
+                  type: 'image',
+                  src: '/images/cart_mockup_ghostgear.png',
+                  alt: 'Cart mockup screenshot'
+                },
+              ]
+            },
+            {
+              body: [
+                {
+                  type: 'image',
+                  src: '/images/checkout_mockup_ghostgear.png',
+                  alt: 'Checkout mockup screenshot'
+                },
+              ]
+            },
+            {
+              body: [
+                {
+                  type: 'image',
+                  src: '/images/confirmation_mockup.png',
+                  alt: 'Order confirmation mockup screenshot'
+                },
+              ]
+            },
+          ],
+        },
+        {
+          columns: [
+            {
+              body: [
+                {
+                  subheading: 'Screen Size Variation Mockup',
+                  type: 'text',
+                  value: `I included considerations for tablet or desktop sized screens as well in my mockups based on my earlier wireframes. This way, users have an option to use a larger device, or they can order ahead of time from home if they don’t have a smart device.`,
+                },
+              ],
+            },
+            {
+              body: [
+                {
+                  type: 'image',
+                  src: '/images/homepage_desktop_mockup_ghostgear.png',
+                  alt: 'Larger screen size homepage mockup'
+                },
+              ]
+            }
+          ],
+        },
+        {
+          heading: 'High-fidelity prototype',
+          columns: [
+            {
+              body: [
+                {
                   type: 'text',
                   value: 'My hi-fi prototype followed the same user flow as the lo-fi prototype, and included to design changes made after the usability study, as well as a few updates for enhanced contrast, readability, and better flow.',
+                },
+                {//TODO: change this to button
+                  type: 'text',
+                  value: 'View the high-fidelity prototype (requires Figma account)',
                 },
                 {
                   type: 'image',

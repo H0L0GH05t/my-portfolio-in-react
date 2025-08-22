@@ -43,60 +43,56 @@ function About() {
 
       <section className="about-section">
         <h3 className="section-heading">Skills</h3>
-        <p className="section-content">
-          <ul>
-            <li><b>Programming Languages:</b></li>
-            <ul><li>Python, JavaScript, C#, C++, XSLT, XML, Java</li></ul>
-            <li><b>Frameworks:</b></li>
-            <ul><li>Django, Flask, React, .NET</li></ul>
-            <li><b>Databases:</b></li>
-            <ul><li>MongoDB, PostgreSQL, MySQL, MSSQL</li></ul>
-            <li><b>APIs:</b></li>
-            <ul><li>RESTful API Development, API Endpoint Testing</li></ul>
-            <li><b>Automation:</b></li>
-            <ul><li>Scripting (Python, JavaScript, Bash), Selenium, Test Driven Development</li></ul>
-            <li><b>Machine Learning:</b></li>
-            <ul><li>Familiarity with Machine Learning concepts, PyTorch, Scikit-learn</li></ul>
-            <li><b>Soft Skills:</b></li>
-            <ul><li>Leadership, Teamwork, Communication, Problem-Solving, Analytical Thinking, Technical Writing and Documentation</li></ul>
-          </ul>
-        </p>
+        <ul className="section-content">
+          <li><b>Programming Languages:</b></li>
+          <ul><li>Python, JavaScript, C#, C++, XSLT, XML, Java</li></ul>
+          <li><b>Frameworks:</b></li>
+          <ul><li>Django, Flask, React, .NET</li></ul>
+          <li><b>Databases:</b></li>
+          <ul><li>MongoDB, PostgreSQL, MySQL, MSSQL</li></ul>
+          <li><b>APIs:</b></li>
+          <ul><li>RESTful API Development, API Endpoint Testing</li></ul>
+          <li><b>Automation:</b></li>
+          <ul><li>Scripting (Python, JavaScript, Bash), Selenium, Test Driven Development</li></ul>
+          <li><b>Machine Learning:</b></li>
+          <ul><li>Familiarity with Machine Learning concepts, PyTorch, Scikit-learn</li></ul>
+          <li><b>Soft Skills:</b></li>
+          <ul><li>Leadership, Teamwork, Communication, Problem-Solving, Analytical Thinking, Technical Writing and Documentation</li></ul>
+        </ul>
       </section>
 
       <section className="about-section">
         <h3 className="section-heading">Work Experience</h3>
-        <p className="section-content">
-          <ul className="work-experience-list">
-            <li>
-              <span className="job-details"><b>Contractor</b> at Alignerr</span>
-              <span className="job-date">Feb 2025 - Present</span>
-            </li>
-            <li>
-              <span className="job-details"><b>Contributor</b> at Outlier AI</span>
-              <span className="job-date">Oct 2024 - Present</span>
-            </li>
-            <li>
-              <span className="job-details"><b>Professional Development</b> [see certificates]</span>
-              <span className="job-date">July 2023 - Present</span>
-            </li>
-            <li>
-              <span className="job-details"><b>Software Engineer II</b> at Iteris</span>
-              <span className="job-date">Oct 2022 - June 2023</span>
-            </li>
-            <li>
-              <span className="job-details"><b>Software Engineer II</b> at Gates Corporation</span>
-              <span className="job-date">Nov 2020 - Sept 2022</span>
-            </li>
-            <li>
-              <span className="job-details"><b>Software Engineer</b> at DataRobot</span>
-              <span className="job-date">July 2019 - Nov 2019</span>
-            </li>
-            <li>
-              <span className="job-details"><b>Software Engineer</b> at Agfa Graphics</span>
-              <span className="job-date">June 2014 - May 2019</span>
-            </li>
-          </ul>
-        </p>
+        <ul className="work-experience-list section-content">
+          <li>
+            <span className="job-details"><b>Contractor</b> at Alignerr</span>
+            <span className="job-date">Feb 2025 - Present</span>
+          </li>
+          <li>
+            <span className="job-details"><b>Contributor</b> at Outlier AI</span>
+            <span className="job-date">Oct 2024 - Present</span>
+          </li>
+          <li>
+            <span className="job-details"><b>Professional Development</b> [see certificates]</span>
+            <span className="job-date">July 2023 - Present</span>
+          </li>
+          <li>
+            <span className="job-details"><b>Software Engineer II</b> at Iteris</span>
+            <span className="job-date">Oct 2022 - June 2023</span>
+          </li>
+          <li>
+            <span className="job-details"><b>Software Engineer II</b> at Gates Corporation</span>
+            <span className="job-date">Nov 2020 - Sept 2022</span>
+          </li>
+          <li>
+            <span className="job-details"><b>Software Engineer</b> at DataRobot</span>
+            <span className="job-date">July 2019 - Nov 2019</span>
+          </li>
+          <li>
+            <span className="job-details"><b>Software Engineer</b> at Agfa Graphics</span>
+            <span className="job-date">June 2014 - May 2019</span>
+          </li>
+        </ul>
         <button onClick={handleDownloadResume} className="download-resume-button">
           Download My Resume
         </button>

@@ -23,8 +23,12 @@ function DesignProjectDetail({ project }) {
         <ReportTemplate
           report={project.report}
           behanceLink={project.behanceLink}
-          dribbbleLink={project.dribbbleLink}
           portfolioPdf={project.portfolioPdf}
+          dribbbleLink={project.dribbbleLink}
+          startdate={project.startdate}
+          enddate={project.enddate}
+          lofiFigmaLink={project.lofiFigmaLink}
+          hifiFigmaLink={project.hifiFigmaLink}
         />
       ) : (
         <p className="project-detail-long-description">{project.longDescription}</p>
