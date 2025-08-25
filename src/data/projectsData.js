@@ -10,7 +10,7 @@ const projectsData = [
     startdate: 'Jul 2025',
     enddate: 'Aug 2025',
     githubLink: 'https://github.com/H0L0GH05t/react-capstone',
-    liveDemoLink: 'https://react-capstone-three.vercel.app/',
+    liveDemoLink: 'https://arin-kase-react-capstone.vercel.app/',
     lofiFigmaLink: 'https://www.figma.com/proto/19nin28p71AtyC5OXX7h8m/Little-Lemon?node-id=310-184',
     hifiFigmaLink: 'https://www.figma.com/proto/19nin28p71AtyC5OXX7h8m/Little-Lemon',
     report: {
@@ -1236,10 +1236,6 @@ const projectsData = [
                   type: 'text',
                   value: 'My hi-fi prototype followed the same user flow as the lo-fi prototype, and included to design changes made after the usability study, as well as a few updates for enhanced contrast, readability, and better flow.',
                 },
-                {//TODO: change this to button
-                  type: 'text',
-                  value: 'View the high-fidelity prototype (requires Figma account)',
-                },
                 {
                   type: 'image',
                   src: '/images/hifi_prototype_ghostgear.png',
@@ -1319,6 +1315,38 @@ const projectsData = [
           },
         ],
       },
+    },
+  },
+  // React Portfolio
+  {
+    id: 'react-portfolio-project',
+    type: 'coding',
+    title: 'React Portfolio Project',
+    description: 'This current website is a result of my desire to continue practicing React after the Meta front-end developer course I took.',
+    image: '/images/react_portfolio_thumb.png',
+    startdate: 'Aug 2025',
+    enddate: 'Aug 2025',
+    githubLink: 'https://github.com/H0L0GH05t/my-portfolio-in-react',
+    liveDemoLink: 'https://arin-kase-portfolio.netlify.app',
+    report: {
+      overview: {
+        content: `In order to continue practicing React, I decided to make this website!`,
+      },
+      sections: [
+        {
+          columns: [
+            {
+              body: [
+                {
+                  type: 'image',
+                  src: '/images/react_portfolio_github.png',
+                  alt: 'Screenshot of the code for this website on GitHub',
+                }
+              ]
+            },
+          ],
+        },
+      ],
     },
   },
 ];

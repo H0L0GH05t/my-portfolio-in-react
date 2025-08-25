@@ -5,7 +5,7 @@ import './Home.css';
 import SocialLinks from './SocialLinks';
 
 function Home() {
-  const profilePhotoPath = process.env.PUBLIC_URL + '/assets/logo.png'; // TODO: can change this later
+  const profilePhotoPath = process.env.PUBLIC_URL + '/assets/logo.png';
   const [featuredProjects, setFeaturedProjects] = useState([]);
 
   useEffect(() => {
