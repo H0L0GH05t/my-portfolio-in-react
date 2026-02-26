@@ -26,6 +26,20 @@ function About() {
     document.body.removeChild(link);
   };
 
+  // TODO: If I add the two different resume downloads, it should be one handler
+  // // Function to handle ai friendly resume download
+  // const handleDownloadResume2 = () => {
+  //   const resumePath = process.env.PUBLIC_URL + '/assets/ArinKase_Resume.pdf';
+
+  //   // Create a temporary anchor element
+  //   const link = document.createElement('a');
+  //   link.href = resumePath;
+  //   link.download = 'ArinKase_Resume.pdf'; // Suggested filename for download
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
+
   return (
     <div className="about-container">
       <h2 className="about-title">About Me</h2>
@@ -44,6 +58,8 @@ function About() {
       <section className="about-section">
         <h3 className="section-heading">Skills</h3>
         <ul className="section-content">
+          <li><b>CRM and Tools:</b></li>
+          <ul><li>Salesforce, Jira, Slack, MS Office, PowerPoint</li></ul>
           <li><b>Programming Languages:</b></li>
           <ul><li>Python, JavaScript, C#, C++, XSLT, XML, Java</li></ul>
           <li><b>Frameworks:</b></li>
@@ -64,6 +80,10 @@ function About() {
       <section className="about-section">
         <h3 className="section-heading">Work Experience</h3>
         <ul className="work-experience-list section-content">
+        <li>
+            <span className="job-details"><b>Rider Assistant </b> at HopSkipDrive</span>
+            <span className="job-date">Jul 2025 - Feb 2026</span>
+          </li>
           <li>
             <span className="job-details"><b>Contractor</b> at Alignerr</span>
             <span className="job-date">Feb 2025 - Present</span>

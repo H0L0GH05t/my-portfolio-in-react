@@ -1,5 +1,23 @@
 const certificatesData = [
   {
+    id: 'salesforce-group',
+    category: 'Salesforce',
+    certificates: [
+      {
+        name: 'Salesforce Certified Platform Foundations',
+        issuer: 'Salesforce',
+        date: 'February 2026',
+        link: 'https://www.salesforce.com/trailblazer/k12gry1mlroz4gyea3',
+      },
+      {
+        name: 'Salesforce Certified Platform Administrator',
+        issuer: 'Salesforce',
+        date: 'May 2026 (Expected)',
+        link: '',
+      },
+    ],
+  },
+  {
     id: 'dev-group',
     category: 'Software Development',
     certificates: [
